@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <algorithm>
 
 /*The contact fields are: first name, last name, nickname, phone number, and
 darkest secret.*/
@@ -41,10 +42,6 @@ public:
 	std::string	get_nickname(void);
 	std::string	get_phone_number(void);
 	std::string	get_darkest_secret(void);
-
-	// other methods :
-	void		renew_contacts(void); 
-
 };
 
 #endif
