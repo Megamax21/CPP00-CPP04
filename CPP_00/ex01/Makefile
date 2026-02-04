@@ -8,6 +8,8 @@ SRCS = main.cpp \
 		contact_setters.cpp\
 		contact_getters.cpp\
 		phonebook.cpp \
+		phonebook_1.cpp \
+		phonebook_2.cpp \
 		
 
 HEADERS = contact.hpp \
