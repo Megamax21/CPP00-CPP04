@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 13:59:22 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/03/26 14:30:12 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/03/26 16:01:30 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,25 @@ Fixed&	Fixed::operator=(const Fixed& other) {
 		return *this;
 	this->_fp_val = other._fp_val;
 	return (*this);
+}
+
+Fixed::Fixed(const int i)
+{
+	this->_fp_val = i << this->_fractional_bits;// >> this->_fractional_bits;
+}
+Fixed::Fixed(const float f)
+{
+	this->_fp_val = round(f * (1 << this->_fractional_bits));
+}
+
+float Fixed::toFloat( void ) const 
+{
+	return (float)this->_fp_val / (1 << this->_fractional_bits);
+}
+
+int Fixed::toInt( void ) const 
+{
+	return (int)this->_fp_val >> this->_fractional_bits;
 }
 
 int	Fixed::getRawBits() const

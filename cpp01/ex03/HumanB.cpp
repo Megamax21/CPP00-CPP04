@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 19:13:52 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/02/18 16:43:41 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/03/24 11:16:06 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 HumanB::HumanB()
 {
 	this->name = "defaultName";
-	this->weapon = new Weapon("defaultWeapon");
+	this->weapon = NULL;
 }
 
 HumanB::HumanB(std::string name)
 {
 	this->name = name;
-	this->weapon = new Weapon("defaultWeapon");
+	this->weapon = NULL;
 }
 
 HumanB::~HumanB()
@@ -51,5 +51,8 @@ std::string	HumanB::getName(void)
 
 void HumanB::attack()
 {
-	std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
+	if (this->weapon)
+		std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
+	else
+		std::cout << this->name << " has no weapon" << std::endl;
 }
