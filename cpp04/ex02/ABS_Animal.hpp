@@ -1,5 +1,5 @@
-#ifndef ABS_ABS_Animal_HPP
-#define ABS_ABS_Animal_HPP
+#ifndef ABS_Animal_HPP
+#define ABS_Animal_HPP
 
 #include <string>
 #include <iostream>
