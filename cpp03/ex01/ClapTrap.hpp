@@ -12,6 +12,7 @@ protected:
 	int			ep;
 	int			atk;
 public:
+	ClapTrap();
 	ClapTrap(std::string name); // Constructor
 	~ClapTrap(); // Destructor
 	ClapTrap& operator=(const ClapTrap& other); // Copy assignment operator overload

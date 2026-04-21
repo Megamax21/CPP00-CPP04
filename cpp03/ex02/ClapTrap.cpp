@@ -6,11 +6,16 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 21:33:30 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/03/27 01:24:34 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/20 16:42:35 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::~ClapTrap()
+{
+	std::cout << "A Claptrap called " << this->name << " was destroyed" << std::endl; 
+}
 
 ClapTrap::ClapTrap(std::string name) {
 	std::cout << "A ClapTrap called "<< name <<" was born" << std::endl;
@@ -18,6 +23,15 @@ ClapTrap::ClapTrap(std::string name) {
 	this->ep = 10;
 	this->hp = 10;
 	this->name = name;
+}
+
+ClapTrap::ClapTrap() 
+{
+	this->name = "ClapTrap";
+	std::cout << "A ClapTrap was born" << std::endl;
+	this->atk = 0;
+	this->ep = 10;
+	this->hp = 10;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other) {

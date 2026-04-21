@@ -12,8 +12,9 @@ private:
 	int			ep;
 	int			atk;
 public:
+	ClapTrap();
 	ClapTrap(std::string name); // Constructor
-	~ClapTrap() { std::cout << "A Claptrap called " << this->name << " was destroyed" << std::endl; }; // Destructor
+	~ClapTrap(); // Destructor
 	ClapTrap& operator=(const ClapTrap& other); // Copy assignment operator overload
 	ClapTrap(const ClapTrap& other); // Copy Constructor
 
