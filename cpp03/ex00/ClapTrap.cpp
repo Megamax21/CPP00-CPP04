@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 21:33:30 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/20 16:41:09 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/21 11:07:24 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,3 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	else
 		std::cout << this->name << " tries repairing himself but can't because it is out of energy or hp !" << std::endl;
 }
-
