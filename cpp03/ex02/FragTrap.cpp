@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 21:33:30 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/21 11:33:16 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/21 14:10:49 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,11 @@ FragTrap::FragTrap() : ClapTrap()
 	this->atk = 30;
 	this->ep = 100;
 	this->hp = 100;
+}
+
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
+{
+	std::cout << "FragTrap copy constructor called" << std::endl;
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& other) {

@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 21:33:30 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/21 11:17:03 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/21 14:10:49 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,11 @@ ScavTrap::ScavTrap()
 	this->atk = 20;
 	this->ep = 50;
 	this->hp = 100;
+}
+
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
+{
+	std::cout << "ScavTrap copy constructor called" << std::endl;
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
