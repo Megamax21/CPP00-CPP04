@@ -6,16 +6,11 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 21:33:30 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/20 16:41:48 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/28 13:57:43 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-
-ClapTrap::~ClapTrap()
-{
-	std::cout << "A Claptrap called " << this->name << " was destroyed" << std::endl; 
-}
 
 ClapTrap::ClapTrap(std::string name) {
 	std::cout << "A ClapTrap called "<< name <<" was born" << std::endl;
