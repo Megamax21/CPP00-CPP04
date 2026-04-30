@@ -42,8 +42,3 @@ const std::string& ABS_Animal::getType() const
 {
 	return (this->type);
 }
-
-void ABS_Animal::makeSound() const
-{
-	std::cout << "Some generic ABS_Animal sound" << std::endl;
-}

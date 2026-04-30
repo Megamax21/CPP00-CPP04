@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 20:46:03 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/03 20:24:12 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/30 16:05:24 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	Brain();
 	Brain(const Brain& other);
 	Brain& operator=(const Brain& other);
-	virtual ~Brain();
+	~Brain();
 };
 
 #endif

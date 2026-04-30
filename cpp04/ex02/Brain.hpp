@@ -6,14 +6,15 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 20:46:03 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/03 20:11:15 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/30 16:06:18 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BRAIN_HPP
 #define BRAIN_HPP
 
-#include "ABS_Animal.hpp"
+#include <string>
+#include <iostream>
 
 class Brain
 {
@@ -23,7 +24,7 @@ public:
 	Brain();
 	Brain(const Brain& other);
 	Brain& operator=(const Brain& other);
-	virtual ~Brain();
+	~Brain();
 };
 
 #endif

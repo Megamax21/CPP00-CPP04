@@ -6,7 +6,7 @@
 /*   By: ml-hote <ml-hote@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/27 03:12:04 by ml-hote           #+#    #+#             */
-/*   Updated: 2026/04/03 20:11:15 by ml-hote          ###   ########.fr       */
+/*   Updated: 2026/04/30 16:06:18 by ml-hote          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@ Dog& Dog::operator=(const Dog& other)
 {
 	if (this == &other)
 		return (*this);
+	delete this->brain;
 	ABS_Animal::operator=(other);
+	this->brain = new Brain(*other.brain);
 	this->type = other.type;
 	std::cout << "Dog copy assignment operator called" << std::endl;
 	return (*this);
